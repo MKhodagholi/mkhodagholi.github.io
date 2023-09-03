@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Yekan Bakh";
+    src: url("./assets/fonts/yekanBakh/YekanBakhFaNum-Light.woff");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "Yekan Bakh";
+    src: url("./assets/fonts/yekanBakh/YekanBakhFaNum-Regular.woff");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Yekan Bakh";
+    src: url("./assets/fonts/yekanBakh/YekanBakhFaNum-Bold.woff");
+    font-weight: 700;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Yekan Bakh;
+  scroll-behavior: smooth;
+}
+
+html {
+  display: block;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+p,
+pre {
+  line-height: 30px !important;
+  font-family: inherit;
+}
+
+label {
+  font-size: 12px;
+}
+
+body {
+  background-color: #fbfafe;
+  max-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #fbfafe;
+}
+
+body::-webkit-scrollbar-track {
+  width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: #e4e4f0;
+  border-radius: 2px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+  right: 0 !important;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  width: 8px;
+  background-color: #e4e4f0;
+  border-radius: 20px;
+}
