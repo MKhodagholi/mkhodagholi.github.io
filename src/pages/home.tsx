@@ -5,7 +5,7 @@ const HomePage = () => {
   const [time, setTime] = useState<number>()
 
   const counter$ = interval(1000).pipe(
-    scan((acc, curr) => {
+    scan((acc) => {
       return --acc
     }, 10),
     takeWhile((number) => number >= 0),
